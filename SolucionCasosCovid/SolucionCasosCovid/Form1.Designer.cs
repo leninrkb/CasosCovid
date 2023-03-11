@@ -30,91 +30,91 @@ namespace SolucionCasosCovid
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button_guardar = new System.Windows.Forms.Button();
+            this.button_actualizar = new System.Windows.Forms.Button();
+            this.button_nuevo = new System.Windows.Forms.Button();
+            this.button_eliminar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox_provincias = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox_casos = new System.Windows.Forms.TextBox();
+            this.textBoxfallecidos = new System.Windows.Forms.TextBox();
+            this.textBox_vacunados = new System.Windows.Forms.TextBox();
+            this.textBox_centros_vacunacion = new System.Windows.Forms.TextBox();
+            this.textBox_digitador = new System.Windows.Forms.TextBox();
+            this.dataGridView_datos = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_datos)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Controls.Add(this.button3);
-            this.flowLayoutPanel1.Controls.Add(this.button4);
+            this.flowLayoutPanel1.Controls.Add(this.button_guardar);
+            this.flowLayoutPanel1.Controls.Add(this.button_actualizar);
+            this.flowLayoutPanel1.Controls.Add(this.button_nuevo);
+            this.flowLayoutPanel1.Controls.Add(this.button_eliminar);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1049, 39);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // button1
+            // button_guardar
             // 
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 31);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "guardar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_guardar.Location = new System.Drawing.Point(3, 3);
+            this.button_guardar.Name = "button_guardar";
+            this.button_guardar.Size = new System.Drawing.Size(75, 31);
+            this.button_guardar.TabIndex = 0;
+            this.button_guardar.Text = "guardar";
+            this.button_guardar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // button_actualizar
             // 
-            this.button2.Location = new System.Drawing.Point(84, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 31);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "actualizar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_actualizar.Location = new System.Drawing.Point(84, 3);
+            this.button_actualizar.Name = "button_actualizar";
+            this.button_actualizar.Size = new System.Drawing.Size(85, 31);
+            this.button_actualizar.TabIndex = 1;
+            this.button_actualizar.Text = "actualizar";
+            this.button_actualizar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button_nuevo
             // 
-            this.button3.Location = new System.Drawing.Point(175, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 31);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "nuevo";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_nuevo.Location = new System.Drawing.Point(175, 3);
+            this.button_nuevo.Name = "button_nuevo";
+            this.button_nuevo.Size = new System.Drawing.Size(75, 31);
+            this.button_nuevo.TabIndex = 2;
+            this.button_nuevo.Text = "nuevo";
+            this.button_nuevo.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // button_eliminar
             // 
-            this.button4.Location = new System.Drawing.Point(256, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 31);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "eliminar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button_eliminar.Location = new System.Drawing.Point(256, 3);
+            this.button_eliminar.Name = "button_eliminar";
+            this.button_eliminar.Size = new System.Drawing.Size(75, 31);
+            this.button_eliminar.TabIndex = 3;
+            this.button_eliminar.Text = "eliminar";
+            this.button_eliminar.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textBox_digitador);
+            this.panel1.Controls.Add(this.textBox_centros_vacunacion);
+            this.panel1.Controls.Add(this.textBox_vacunados);
+            this.panel1.Controls.Add(this.textBoxfallecidos);
+            this.panel1.Controls.Add(this.textBox_casos);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.comboBox_provincias);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 57);
             this.panel1.Name = "panel1";
@@ -132,13 +132,13 @@ namespace SolucionCasosCovid
             this.label1.TabIndex = 0;
             this.label1.Text = "Provincia";
             // 
-            // comboBox1
+            // comboBox_provincias
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(16, 32);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 24);
-            this.comboBox1.TabIndex = 1;
+            this.comboBox_provincias.FormattingEnabled = true;
+            this.comboBox_provincias.Location = new System.Drawing.Point(16, 32);
+            this.comboBox_provincias.Name = "comboBox_provincias";
+            this.comboBox_provincias.Size = new System.Drawing.Size(200, 24);
+            this.comboBox_provincias.TabIndex = 1;
             // 
             // label2
             // 
@@ -195,66 +195,65 @@ namespace SolucionCasosCovid
             this.label6.TabIndex = 6;
             this.label6.Text = "Digitador";
             // 
-            // textBox1
+            // textBox_casos
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 106);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 22);
-            this.textBox1.TabIndex = 7;
+            this.textBox_casos.Location = new System.Drawing.Point(16, 106);
+            this.textBox_casos.Name = "textBox_casos";
+            this.textBox_casos.Size = new System.Drawing.Size(200, 22);
+            this.textBox_casos.TabIndex = 7;
             // 
-            // textBox2
+            // textBoxfallecidos
             // 
-            this.textBox2.Location = new System.Drawing.Point(16, 179);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 22);
-            this.textBox2.TabIndex = 8;
+            this.textBoxfallecidos.Location = new System.Drawing.Point(16, 179);
+            this.textBoxfallecidos.Name = "textBoxfallecidos";
+            this.textBoxfallecidos.Size = new System.Drawing.Size(200, 22);
+            this.textBoxfallecidos.TabIndex = 8;
             // 
-            // textBox3
+            // textBox_vacunados
             // 
-            this.textBox3.Location = new System.Drawing.Point(16, 248);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 22);
-            this.textBox3.TabIndex = 9;
+            this.textBox_vacunados.Location = new System.Drawing.Point(16, 248);
+            this.textBox_vacunados.Name = "textBox_vacunados";
+            this.textBox_vacunados.Size = new System.Drawing.Size(200, 22);
+            this.textBox_vacunados.TabIndex = 9;
             // 
-            // textBox4
+            // textBox_centros_vacunacion
             // 
-            this.textBox4.Location = new System.Drawing.Point(16, 316);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 22);
-            this.textBox4.TabIndex = 10;
+            this.textBox_centros_vacunacion.Location = new System.Drawing.Point(16, 316);
+            this.textBox_centros_vacunacion.Name = "textBox_centros_vacunacion";
+            this.textBox_centros_vacunacion.Size = new System.Drawing.Size(200, 22);
+            this.textBox_centros_vacunacion.TabIndex = 10;
             // 
-            // textBox5
+            // textBox_digitador
             // 
-            this.textBox5.Location = new System.Drawing.Point(16, 381);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(200, 22);
-            this.textBox5.TabIndex = 11;
+            this.textBox_digitador.Location = new System.Drawing.Point(16, 381);
+            this.textBox_digitador.Name = "textBox_digitador";
+            this.textBox_digitador.Size = new System.Drawing.Size(200, 22);
+            this.textBox_digitador.TabIndex = 11;
             // 
-            // dataGridView1
+            // dataGridView_datos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(256, 57);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(805, 424);
-            this.dataGridView1.TabIndex = 3;
+            this.dataGridView_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_datos.Location = new System.Drawing.Point(256, 57);
+            this.dataGridView_datos.Name = "dataGridView_datos";
+            this.dataGridView_datos.RowHeadersWidth = 51;
+            this.dataGridView_datos.RowTemplate.Height = 24;
+            this.dataGridView_datos.Size = new System.Drawing.Size(805, 424);
+            this.dataGridView_datos.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1073, 529);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1073, 494);
+            this.Controls.Add(this.dataGridView_datos);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Form1";
-            this.Opacity = 0.9D;
             this.Text = "Form1";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_datos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -262,24 +261,24 @@ namespace SolucionCasosCovid
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button_guardar;
+        private System.Windows.Forms.Button button_actualizar;
+        private System.Windows.Forms.Button button_nuevo;
+        private System.Windows.Forms.Button button_eliminar;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_digitador;
+        private System.Windows.Forms.TextBox textBox_centros_vacunacion;
+        private System.Windows.Forms.TextBox textBox_vacunados;
+        private System.Windows.Forms.TextBox textBoxfallecidos;
+        private System.Windows.Forms.TextBox textBox_casos;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox_provincias;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView_datos;
     }
 }
 
