@@ -4,24 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Datos
-{
-    public class EntidadCasosCovid
-    {
+namespace Entidades {
+    class EntidadCasosCovid {
         public int Id { get; set; }
         public string Provincia { get; set; }
         public int Casos { get; set; }
         public int Fallecidos { get; set; }
         public int Vacunados { get; set; }
         public int CentrosVacunacion { get; set; }
-        public string Digitador { get; set; }
-
-        public EntidadCasosCovid()
-        {
+        public string Digitador {
+            get {
+                if (Digitador == null) {
+                    return "";
+                } else {
+                    return "";
+                }
+            }
+            set {
+                Digitador = value;
+            }
         }
 
-        public EntidadCasosCovid(int id, string provincia, int casos, int fallecidos, int vacunados, int centrosVacunacion, string digitador)
-        {
+        public EntidadCasosCovid() {
+
+        }
+
+        public EntidadCasosCovid(int id, string provincia, int casos, int fallecidos, int vacunados, int centrosVacunacion, string digitador) {
             Id = id;
             Provincia = provincia;
             Casos = casos;
