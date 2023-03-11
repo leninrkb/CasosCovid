@@ -1,0 +1,15 @@
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\bin\Debug\SolucionCasosCovid.exe.config
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\bin\Debug\SolucionCasosCovid.exe
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\bin\Debug\SolucionCasosCovid.pdb
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\bin\Debug\Entidades.dll
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\bin\Debug\Negocio.dll
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\bin\Debug\Entidades.pdb
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\bin\Debug\Negocio.pdb
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\obj\Debug\SolucionCasosCovid.csproj.AssemblyReference.cache
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\obj\Debug\SolucionCasosCovid.Form1.resources
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\obj\Debug\SolucionCasosCovid.Properties.Resources.resources
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\obj\Debug\SolucionCasosCovid.csproj.GenerateResource.cache
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\obj\Debug\SolucionCasosCovid.csproj.CoreCompileInputs.cache
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\obj\Debug\SolucionCasosCovid.csproj.CopyComplete
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\obj\Debug\SolucionCasosCovid.exe
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\obj\Debug\SolucionCasosCovid.pdb

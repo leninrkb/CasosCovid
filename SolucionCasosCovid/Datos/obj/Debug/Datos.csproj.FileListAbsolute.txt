@@ -1,0 +1,9 @@
+D:\GitHub\CasosCovid\SolucionCasosCovid\Datos\bin\Debug\Datos.dll
+D:\GitHub\CasosCovid\SolucionCasosCovid\Datos\bin\Debug\Datos.pdb
+D:\GitHub\CasosCovid\SolucionCasosCovid\Datos\bin\Debug\Entidades.dll
+D:\GitHub\CasosCovid\SolucionCasosCovid\Datos\bin\Debug\Entidades.pdb
+D:\GitHub\CasosCovid\SolucionCasosCovid\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+D:\GitHub\CasosCovid\SolucionCasosCovid\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+D:\GitHub\CasosCovid\SolucionCasosCovid\Datos\obj\Debug\Datos.csproj.CopyComplete
+D:\GitHub\CasosCovid\SolucionCasosCovid\Datos\obj\Debug\Datos.dll
+D:\GitHub\CasosCovid\SolucionCasosCovid\Datos\obj\Debug\Datos.pdb
