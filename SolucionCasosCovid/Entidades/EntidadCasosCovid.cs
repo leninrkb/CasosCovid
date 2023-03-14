@@ -12,12 +12,13 @@ namespace Entidades {
         public int Fallecidos { get; set; }
         public int Vacunados { get; set; }
         public int CentrosVacunacion { get; set; }
+        public DateTime FechaRegistro { get; set; }
         public string Digitador {
             get {
                 if (Digitador == null) {
-                    return "";
+                    return "encargado principal";
                 } else {
-                    return "";
+                    return Digitador;
                 }
             }
             set {
