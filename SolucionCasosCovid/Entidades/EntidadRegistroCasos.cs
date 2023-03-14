@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Entidades {
-    class EntidadCasosCovid {
+    public class EntidadRegistroCasos {
         public int Id { get; set; }
         public string Provincia { get; set; }
         public int Casos { get; set; }
@@ -13,30 +13,20 @@ namespace Entidades {
         public int Vacunados { get; set; }
         public int CentrosVacunacion { get; set; }
         public DateTime FechaRegistro { get; set; }
-        public string Digitador {
-            get {
-                if (Digitador == null) {
-                    return "encargado principal";
-                } else {
-                    return Digitador;
-                }
-            }
-            set {
-                Digitador = value;
-            }
-        }
+        public string Digitador { get; set; }
 
-        public EntidadCasosCovid() {
+        public EntidadRegistroCasos() {
 
         }
 
-        public EntidadCasosCovid(int id, string provincia, int casos, int fallecidos, int vacunados, int centrosVacunacion, string digitador) {
+        public EntidadRegistroCasos(int id, string provincia, int casos, int fallecidos, int vacunados, int centrosVacunacion,DateTime fechaRegistro, string digitador) {
             Id = id;
             Provincia = provincia;
             Casos = casos;
             Fallecidos = fallecidos;
             Vacunados = vacunados;
             CentrosVacunacion = centrosVacunacion;
+            FechaRegistro = fechaRegistro;
             Digitador = digitador;
         }
     }

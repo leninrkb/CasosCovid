@@ -35,6 +35,9 @@ namespace SolucionCasosCovid
             this.button_nuevo = new System.Windows.Forms.Button();
             this.button_eliminar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker_fechaRegistro = new System.Windows.Forms.DateTimePicker();
+            this.textBox_provincia = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.textBox_digitador = new System.Windows.Forms.TextBox();
             this.textBox_centros_vacunacion = new System.Windows.Forms.TextBox();
             this.textBox_vacunados = new System.Windows.Forms.TextBox();
@@ -45,14 +48,14 @@ namespace SolucionCasosCovid
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox_provincias = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView_datos = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox_fechaRegistro = new System.Windows.Forms.TextBox();
+            this.notificacion = new System.Windows.Forms.FlowLayoutPanel();
+            this.label_notificacion = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_datos)).BeginInit();
+            this.notificacion.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -75,6 +78,7 @@ namespace SolucionCasosCovid
             this.button_guardar.TabIndex = 0;
             this.button_guardar.Text = "guardar";
             this.button_guardar.UseVisualStyleBackColor = true;
+            this.button_guardar.Click += new System.EventHandler(this.Button_guardar_Click);
             // 
             // button_actualizar
             // 
@@ -106,7 +110,8 @@ namespace SolucionCasosCovid
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel1.Controls.Add(this.textBox_fechaRegistro);
+            this.panel1.Controls.Add(this.dateTimePicker_fechaRegistro);
+            this.panel1.Controls.Add(this.textBox_provincia);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.textBox_digitador);
             this.panel1.Controls.Add(this.textBox_centros_vacunacion);
@@ -118,12 +123,36 @@ namespace SolucionCasosCovid
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.comboBox_provincias);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(12, 57);
+            this.panel1.Location = new System.Drawing.Point(12, 80);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(238, 497);
             this.panel1.TabIndex = 2;
+            // 
+            // dateTimePicker_fechaRegistro
+            // 
+            this.dateTimePicker_fechaRegistro.Location = new System.Drawing.Point(16, 449);
+            this.dateTimePicker_fechaRegistro.Name = "dateTimePicker_fechaRegistro";
+            this.dateTimePicker_fechaRegistro.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker_fechaRegistro.TabIndex = 15;
+            // 
+            // textBox_provincia
+            // 
+            this.textBox_provincia.Location = new System.Drawing.Point(16, 41);
+            this.textBox_provincia.Name = "textBox_provincia";
+            this.textBox_provincia.Size = new System.Drawing.Size(200, 22);
+            this.textBox_provincia.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.Control;
+            this.label7.Location = new System.Drawing.Point(14, 429);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(144, 17);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Fecha de resgistro";
             // 
             // textBox_digitador
             // 
@@ -215,14 +244,6 @@ namespace SolucionCasosCovid
             this.label2.TabIndex = 2;
             this.label2.Text = "# Casos";
             // 
-            // comboBox_provincias
-            // 
-            this.comboBox_provincias.FormattingEnabled = true;
-            this.comboBox_provincias.Location = new System.Drawing.Point(16, 32);
-            this.comboBox_provincias.Name = "comboBox_provincias";
-            this.comboBox_provincias.Size = new System.Drawing.Size(200, 24);
-            this.comboBox_provincias.TabIndex = 1;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -237,36 +258,39 @@ namespace SolucionCasosCovid
             // dataGridView_datos
             // 
             this.dataGridView_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_datos.Location = new System.Drawing.Point(256, 57);
+            this.dataGridView_datos.Location = new System.Drawing.Point(256, 80);
             this.dataGridView_datos.Name = "dataGridView_datos";
             this.dataGridView_datos.RowHeadersWidth = 51;
             this.dataGridView_datos.RowTemplate.Height = 24;
             this.dataGridView_datos.Size = new System.Drawing.Size(805, 497);
             this.dataGridView_datos.TabIndex = 3;
             // 
-            // label7
+            // notificacion
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(14, 429);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(144, 17);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Fecha de resgistro";
+            this.notificacion.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.notificacion.Controls.Add(this.label_notificacion);
+            this.notificacion.Location = new System.Drawing.Point(12, 57);
+            this.notificacion.Name = "notificacion";
+            this.notificacion.Size = new System.Drawing.Size(1049, 17);
+            this.notificacion.TabIndex = 4;
             // 
-            // textBox_fechaRegistro
+            // label_notificacion
             // 
-            this.textBox_fechaRegistro.Location = new System.Drawing.Point(16, 449);
-            this.textBox_fechaRegistro.Name = "textBox_fechaRegistro";
-            this.textBox_fechaRegistro.Size = new System.Drawing.Size(200, 22);
-            this.textBox_fechaRegistro.TabIndex = 13;
+            this.label_notificacion.AutoSize = true;
+            this.label_notificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_notificacion.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label_notificacion.Location = new System.Drawing.Point(3, 0);
+            this.label_notificacion.Name = "label_notificacion";
+            this.label_notificacion.Size = new System.Drawing.Size(75, 17);
+            this.label_notificacion.TabIndex = 16;
+            this.label_notificacion.Text = "Provincia";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1073, 570);
+            this.ClientSize = new System.Drawing.Size(1073, 589);
+            this.Controls.Add(this.notificacion);
             this.Controls.Add(this.dataGridView_datos);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -276,6 +300,8 @@ namespace SolucionCasosCovid
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_datos)).EndInit();
+            this.notificacion.ResumeLayout(false);
+            this.notificacion.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -298,11 +324,13 @@ namespace SolucionCasosCovid
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox_provincias;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView_datos;
-        private System.Windows.Forms.TextBox textBox_fechaRegistro;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox_provincia;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_fechaRegistro;
+        private System.Windows.Forms.FlowLayoutPanel notificacion;
+        private System.Windows.Forms.Label label_notificacion;
     }
 }
 

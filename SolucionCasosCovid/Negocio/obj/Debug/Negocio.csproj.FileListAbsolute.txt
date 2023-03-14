@@ -9,3 +9,4 @@ D:\GitHub\CasosCovid\SolucionCasosCovid\Negocio\obj\Debug\Negocio.csproj.CoreCom
 D:\GitHub\CasosCovid\SolucionCasosCovid\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 D:\GitHub\CasosCovid\SolucionCasosCovid\Negocio\obj\Debug\Negocio.dll
 D:\GitHub\CasosCovid\SolucionCasosCovid\Negocio\obj\Debug\Negocio.pdb
+D:\GitHub\CasosCovid\SolucionCasosCovid\Negocio\bin\Debug\Datos.dll.config
