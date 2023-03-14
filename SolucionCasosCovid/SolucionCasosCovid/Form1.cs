@@ -19,25 +19,33 @@ namespace SolucionCasosCovid {
             NotificacionSimple("Bienvenido al sistema");
 
         }
-
         private void Button_guardar_Click(object sender, EventArgs e) {
+            Guardar();
+        }
+        private void Guardar() {
+            if (CapturarCampos() == null) {
+                return;
+            } 
             LimpiarCampos();
+            NotificacionBien("se guardo con exito!");
         }
-
-        
         private EntidadRegistroCasos CapturarCampos() {
-            EntidadRegistroCasos entidad = new EntidadRegistroCasos {
-                Provincia = textBox_provincia.Text,
-                Casos = int.Parse(textBox_casos.Text),
-                Fallecidos = int.Parse(textBox_fallecidos.Text),
-                Vacunados = int.Parse(textBox_vacunados.Text),
-                CentrosVacunacion = int.Parse(textBox_centros_vacunacion.Text),
-                Digitador = textBox_digitador.Text,
-                FechaRegistro = dateTimePicker_fechaRegistro.Value.Date
-            };
-            return entidad;
+            try {
+                EntidadRegistroCasos entidad = new EntidadRegistroCasos {
+                    Provincia = textBox_provincia.Text,
+                    Casos = int.Parse(textBox_casos.Text),
+                    Fallecidos = int.Parse(textBox_fallecidos.Text),
+                    Vacunados = int.Parse(textBox_vacunados.Text),
+                    CentrosVacunacion = int.Parse(textBox_centros_vacunacion.Text),
+                    Digitador = textBox_digitador.Text,
+                    FechaRegistro = dateTimePicker_fechaRegistro.Value.Date
+                };
+                return entidad;
+            } catch (FormatException){
+                NotificacionError("Error - Revise los campos!");
+                return null;
+            }
         }
-
         private void LimpiarCampos() {
             textBox_casos.Text = "";
             textBox_provincia.Text = "";
@@ -46,10 +54,21 @@ namespace SolucionCasosCovid {
             textBox_digitador.Text = "";
             textBox_centros_vacunacion.Text = "";
         }
-
         private void NotificacionSimple(String m) {
             notificacion.BackColor = Color.DarkGray;
             label_notificacion.Text = m;
+        }
+        private async void NotificacionError(String m) {
+            notificacion.BackColor = Color.DarkRed;
+            label_notificacion.Text = m;
+            await Task.Delay(3000);
+            NotificacionSimple("Bienvenido al sistema");
+        }
+        private async void NotificacionBien(String m) {
+            notificacion.BackColor = Color.DarkGreen;
+            label_notificacion.Text = m;
+            await Task.Delay(3000);
+            NotificacionSimple("Bienvenido al sistema");
         }
     }
 }

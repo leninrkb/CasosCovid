@@ -269,9 +269,9 @@ namespace SolucionCasosCovid
             // 
             this.notificacion.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.notificacion.Controls.Add(this.label_notificacion);
-            this.notificacion.Location = new System.Drawing.Point(12, 57);
+            this.notificacion.Location = new System.Drawing.Point(12, 54);
             this.notificacion.Name = "notificacion";
-            this.notificacion.Size = new System.Drawing.Size(1049, 17);
+            this.notificacion.Size = new System.Drawing.Size(1049, 22);
             this.notificacion.TabIndex = 4;
             // 
             // label_notificacion
