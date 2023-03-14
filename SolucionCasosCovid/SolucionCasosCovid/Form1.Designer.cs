@@ -35,19 +35,21 @@ namespace SolucionCasosCovid
             this.button_nuevo = new System.Windows.Forms.Button();
             this.button_eliminar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox_provincias = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox_casos = new System.Windows.Forms.TextBox();
-            this.textBoxfallecidos = new System.Windows.Forms.TextBox();
-            this.textBox_vacunados = new System.Windows.Forms.TextBox();
-            this.textBox_centros_vacunacion = new System.Windows.Forms.TextBox();
             this.textBox_digitador = new System.Windows.Forms.TextBox();
+            this.textBox_centros_vacunacion = new System.Windows.Forms.TextBox();
+            this.textBox_vacunados = new System.Windows.Forms.TextBox();
+            this.textBox_fallecidos = new System.Windows.Forms.TextBox();
+            this.textBox_casos = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox_provincias = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.dataGridView_datos = new System.Windows.Forms.DataGridView();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox_fechaRegistro = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_datos)).BeginInit();
@@ -104,10 +106,12 @@ namespace SolucionCasosCovid
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Controls.Add(this.textBox_fechaRegistro);
+            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.textBox_digitador);
             this.panel1.Controls.Add(this.textBox_centros_vacunacion);
             this.panel1.Controls.Add(this.textBox_vacunados);
-            this.panel1.Controls.Add(this.textBoxfallecidos);
+            this.panel1.Controls.Add(this.textBox_fallecidos);
             this.panel1.Controls.Add(this.textBox_casos);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
@@ -118,71 +122,43 @@ namespace SolucionCasosCovid
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 57);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(238, 424);
+            this.panel1.Size = new System.Drawing.Size(238, 497);
             this.panel1.TabIndex = 2;
             // 
-            // label1
+            // textBox_digitador
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(13, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Provincia";
+            this.textBox_digitador.Location = new System.Drawing.Point(16, 381);
+            this.textBox_digitador.Name = "textBox_digitador";
+            this.textBox_digitador.Size = new System.Drawing.Size(200, 22);
+            this.textBox_digitador.TabIndex = 11;
             // 
-            // comboBox_provincias
+            // textBox_centros_vacunacion
             // 
-            this.comboBox_provincias.FormattingEnabled = true;
-            this.comboBox_provincias.Location = new System.Drawing.Point(16, 32);
-            this.comboBox_provincias.Name = "comboBox_provincias";
-            this.comboBox_provincias.Size = new System.Drawing.Size(200, 24);
-            this.comboBox_provincias.TabIndex = 1;
+            this.textBox_centros_vacunacion.Location = new System.Drawing.Point(16, 316);
+            this.textBox_centros_vacunacion.Name = "textBox_centros_vacunacion";
+            this.textBox_centros_vacunacion.Size = new System.Drawing.Size(200, 22);
+            this.textBox_centros_vacunacion.TabIndex = 10;
             // 
-            // label2
+            // textBox_vacunados
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(13, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "# Casos";
+            this.textBox_vacunados.Location = new System.Drawing.Point(16, 248);
+            this.textBox_vacunados.Name = "textBox_vacunados";
+            this.textBox_vacunados.Size = new System.Drawing.Size(200, 22);
+            this.textBox_vacunados.TabIndex = 9;
             // 
-            // label3
+            // textBox_fallecidos
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(13, 158);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 17);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "# Fallecidos";
+            this.textBox_fallecidos.Location = new System.Drawing.Point(16, 179);
+            this.textBox_fallecidos.Name = "textBox_fallecidos";
+            this.textBox_fallecidos.Size = new System.Drawing.Size(200, 22);
+            this.textBox_fallecidos.TabIndex = 8;
             // 
-            // label4
+            // textBox_casos
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(13, 227);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 17);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "# Vacunados";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(13, 295);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(188, 17);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "# Centros de vacunacion";
+            this.textBox_casos.Location = new System.Drawing.Point(16, 106);
+            this.textBox_casos.Name = "textBox_casos";
+            this.textBox_casos.Size = new System.Drawing.Size(200, 22);
+            this.textBox_casos.TabIndex = 7;
             // 
             // label6
             // 
@@ -195,40 +171,68 @@ namespace SolucionCasosCovid
             this.label6.TabIndex = 6;
             this.label6.Text = "Digitador";
             // 
-            // textBox_casos
+            // label5
             // 
-            this.textBox_casos.Location = new System.Drawing.Point(16, 106);
-            this.textBox_casos.Name = "textBox_casos";
-            this.textBox_casos.Size = new System.Drawing.Size(200, 22);
-            this.textBox_casos.TabIndex = 7;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(13, 295);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(188, 17);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "# Centros de vacunacion";
             // 
-            // textBoxfallecidos
+            // label4
             // 
-            this.textBoxfallecidos.Location = new System.Drawing.Point(16, 179);
-            this.textBoxfallecidos.Name = "textBoxfallecidos";
-            this.textBoxfallecidos.Size = new System.Drawing.Size(200, 22);
-            this.textBoxfallecidos.TabIndex = 8;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Control;
+            this.label4.Location = new System.Drawing.Point(13, 227);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(102, 17);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "# Vacunados";
             // 
-            // textBox_vacunados
+            // label3
             // 
-            this.textBox_vacunados.Location = new System.Drawing.Point(16, 248);
-            this.textBox_vacunados.Name = "textBox_vacunados";
-            this.textBox_vacunados.Size = new System.Drawing.Size(200, 22);
-            this.textBox_vacunados.TabIndex = 9;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(13, 158);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 17);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "# Fallecidos";
             // 
-            // textBox_centros_vacunacion
+            // label2
             // 
-            this.textBox_centros_vacunacion.Location = new System.Drawing.Point(16, 316);
-            this.textBox_centros_vacunacion.Name = "textBox_centros_vacunacion";
-            this.textBox_centros_vacunacion.Size = new System.Drawing.Size(200, 22);
-            this.textBox_centros_vacunacion.TabIndex = 10;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(13, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 17);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "# Casos";
             // 
-            // textBox_digitador
+            // comboBox_provincias
             // 
-            this.textBox_digitador.Location = new System.Drawing.Point(16, 381);
-            this.textBox_digitador.Name = "textBox_digitador";
-            this.textBox_digitador.Size = new System.Drawing.Size(200, 22);
-            this.textBox_digitador.TabIndex = 11;
+            this.comboBox_provincias.FormattingEnabled = true;
+            this.comboBox_provincias.Location = new System.Drawing.Point(16, 32);
+            this.comboBox_provincias.Name = "comboBox_provincias";
+            this.comboBox_provincias.Size = new System.Drawing.Size(200, 24);
+            this.comboBox_provincias.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(13, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Provincia";
             // 
             // dataGridView_datos
             // 
@@ -237,14 +241,32 @@ namespace SolucionCasosCovid
             this.dataGridView_datos.Name = "dataGridView_datos";
             this.dataGridView_datos.RowHeadersWidth = 51;
             this.dataGridView_datos.RowTemplate.Height = 24;
-            this.dataGridView_datos.Size = new System.Drawing.Size(805, 424);
+            this.dataGridView_datos.Size = new System.Drawing.Size(805, 497);
             this.dataGridView_datos.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.Control;
+            this.label7.Location = new System.Drawing.Point(14, 429);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(144, 17);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Fecha de resgistro";
+            // 
+            // textBox_fechaRegistro
+            // 
+            this.textBox_fechaRegistro.Location = new System.Drawing.Point(16, 449);
+            this.textBox_fechaRegistro.Name = "textBox_fechaRegistro";
+            this.textBox_fechaRegistro.Size = new System.Drawing.Size(200, 22);
+            this.textBox_fechaRegistro.TabIndex = 13;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1073, 494);
+            this.ClientSize = new System.Drawing.Size(1073, 570);
             this.Controls.Add(this.dataGridView_datos);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -269,7 +291,7 @@ namespace SolucionCasosCovid
         private System.Windows.Forms.TextBox textBox_digitador;
         private System.Windows.Forms.TextBox textBox_centros_vacunacion;
         private System.Windows.Forms.TextBox textBox_vacunados;
-        private System.Windows.Forms.TextBox textBoxfallecidos;
+        private System.Windows.Forms.TextBox textBox_fallecidos;
         private System.Windows.Forms.TextBox textBox_casos;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -279,6 +301,8 @@ namespace SolucionCasosCovid
         private System.Windows.Forms.ComboBox comboBox_provincias;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView_datos;
+        private System.Windows.Forms.TextBox textBox_fechaRegistro;
+        private System.Windows.Forms.Label label7;
     }
 }
 
