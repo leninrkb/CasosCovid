@@ -23,9 +23,11 @@ namespace SolucionCasosCovid {
             Guardar();
         }
         private void Guardar() {
-            if (CapturarCampos() == null) {
+            var e = CapturarCampos();
+            if (e == null) {
                 return;
-            } 
+            }
+            NegocioCovid.Guardar(e);
             LimpiarCampos();
             NotificacionBien("se guardo con exito!");
         }
