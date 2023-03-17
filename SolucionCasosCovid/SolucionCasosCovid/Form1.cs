@@ -27,9 +27,12 @@ namespace SolucionCasosCovid {
             if (e == null) {
                 return;
             }
-            NegocioCovid.Guardar(e);
-            LimpiarCampos();
-            NotificacionBien("se guardo con exito!");
+            if (NegocioCovid.Guardar(e)) {
+                LimpiarCampos();
+                NotificacionBien("se guardo con exito!");
+            } else {
+                NotificacionError("ocurrio un error y no se guardo!");
+            }
         }
         private EntidadRegistroCasos CapturarCampos() {
             try {

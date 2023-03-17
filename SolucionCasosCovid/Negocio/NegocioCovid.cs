@@ -8,8 +8,8 @@ using Datos;
 
 namespace Negocio {
     public class NegocioCovid {
-        public static void Guardar(EntidadRegistroCasos entidad) {
-            DatosCovid.Guardar(entidad);
+        public static Boolean Guardar(EntidadRegistroCasos entidad) {
+            return DatosCovid.Guardar(entidad);
         }
     }
 }

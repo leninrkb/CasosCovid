@@ -13,3 +13,6 @@ D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\obj\Debug\SolucionCas
 D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\obj\Debug\SolucionCasosCovid.csproj.CopyComplete
 D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\obj\Debug\SolucionCasosCovid.exe
 D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\obj\Debug\SolucionCasosCovid.pdb
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\bin\Debug\Datos.dll
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\bin\Debug\Datos.pdb
+D:\GitHub\CasosCovid\SolucionCasosCovid\SolucionCasosCovid\bin\Debug\Datos.dll.config
