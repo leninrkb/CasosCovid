@@ -11,5 +11,9 @@ namespace Negocio {
         public static Boolean Guardar(EntidadRegistroCasos entidad) {
             return DatosCovid.Guardar(entidad);
         }
+
+        public static List<EntidadRegistroCasos> ObtenerTodosLosRegistros() {
+            return DatosCovid.ObtenerTodosLosRegistros();
+        }
     }
 }

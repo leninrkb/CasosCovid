@@ -12,10 +12,10 @@ namespace Datos {
     public class DatosCovid {
         public static Boolean Guardar(EntidadRegistroCasos entidad) {
             try {
-                SqlConnection c = new SqlConnection(Properties.Settings.Default.CadenaConexion);
-                c.Open();
+                SqlConnection conexion = new SqlConnection(Properties.Settings.Default.CadenaConexion);
+                conexion.Open();
                 SqlCommand cmd = new SqlCommand();
-                cmd.Connection = c;
+                cmd.Connection = conexion;
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = @"INSERT INTO RegistroCasos
                                    (provincia
@@ -38,12 +38,40 @@ namespace Datos {
                 cmd.Parameters.AddWithValue("@fechaRegistro", entidad.FechaRegistro);
                 cmd.Parameters.AddWithValue("@digitador", entidad.Digitador);
                 cmd.ExecuteNonQuery();
-                c.Close();
+                conexion.Close();
                 return true;
-            } catch (Exception e) {
-                Console.WriteLine("error -------: " + e);
+            } catch {
                 return false;
             }
         }
+        public static List<EntidadRegistroCasos> ObtenerTodosLosRegistros() {
+
+            try {
+                List<EntidadRegistroCasos> registros = new List<EntidadRegistroCasos>();
+                SqlConnection conexion = new SqlConnection(Properties.Settings.Default.CadenaConexion);
+                SqlCommand comando = new SqlCommand("SELECT * FROM RegistroCasos", conexion);
+                conexion.Open();
+                SqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read()) {
+                    EntidadRegistroCasos registro = new EntidadRegistroCasos {
+                        Id = int.Parse(reader["id"].ToString()),
+                        Provincia = reader["provincia"].ToString(),
+                        Casos = int.Parse(reader["casos"].ToString()),
+                        Fallecidos = int.Parse(reader["fallecidos"].ToString()),
+                        CentrosVacunacion = int.Parse(reader["centrosVacunacion"].ToString()),
+                        Vacunados = int.Parse(reader["vacunados"].ToString()),
+                        FechaRegistro = DateTime.Parse(reader["fechaRegistro"].ToString()),
+                        Digitador = reader["digitador"].ToString()
+                    };
+                    registros.Add(registro);
+                }
+                reader.Close();
+                conexion.Close();
+                return registros;
+            } catch {
+                return null;
+            }
+        }
+
     }
 }

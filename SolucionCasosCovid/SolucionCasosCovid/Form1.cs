@@ -17,11 +17,13 @@ namespace SolucionCasosCovid {
         public Form1() {
             InitializeComponent();
             NotificacionSimple("Bienvenido al sistema");
+            CargarDataGrid();
 
         }
         private void Button_guardar_Click(object sender, EventArgs e) {
             Guardar();
         }
+
         private void Guardar() {
             var e = CapturarCampos();
             if (e == null) {
@@ -30,8 +32,17 @@ namespace SolucionCasosCovid {
             if (NegocioCovid.Guardar(e)) {
                 LimpiarCampos();
                 NotificacionBien("se guardo con exito!");
+                CargarDataGrid();
             } else {
                 NotificacionError("ocurrio un error y no se guardo!");
+            }
+        }
+        private void CargarDataGrid() {
+            try {
+                dataGridView_datos.DataSource = NegocioCovid.ObtenerTodosLosRegistros();
+            } catch {
+                MessageBox.Show("ocurrio un error al cargar los datos!");
+                DeshabilitarBotones();
             }
         }
         private EntidadRegistroCasos CapturarCampos() {
@@ -74,6 +85,18 @@ namespace SolucionCasosCovid {
             label_notificacion.Text = m;
             await Task.Delay(3000);
             NotificacionSimple("Bienvenido al sistema");
+        }
+        private void DeshabilitarBotones() {
+            button_actualizar.Enabled = false;
+            button_guardar.Enabled = false;
+            button_nuevo.Enabled = false;
+            button_eliminar.Enabled = false;
+        }
+        private void HabilitarBotones() {
+            button_actualizar.Enabled = true;
+            button_guardar.Enabled = true;
+            button_nuevo.Enabled = true;
+            button_eliminar.Enabled = true;
         }
     }
 }
